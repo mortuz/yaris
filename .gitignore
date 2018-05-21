@@ -1,0 +1,9 @@
+/.idea/
+/node_modules/
+/.bowerrc
+/bower.json
+/gulpfile.js
+/package-lock.json
+/package.json
+.idea
+package-lock.json

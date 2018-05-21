@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../fonts/Montserrat-SemiBold.otf"); }
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+       ========================================================================== */
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+body {
+  margin: 0; }
+
+/**
+     * Add the correct display in IE 9-.
+     */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+.b-video-player-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 854px;
+}
+
+.vjs-control-bar {
+    position: relative;
+    opacity: 1 !important;
+    position: absolute;
+}
+
+.b-text-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-family: "Montserrat-SemiBold";
+  color: #000000;
+  z-index: 0; }
+
+.b-text-animation.is-ready {
+    z-index: 2147483647;
+}
+
+.video-js .vjs-big-play-button {
+    z-index: 2147483647;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.vjs-control-bar {
+    z-index: 2147483647;
+}
+
+
+.video-js.vjs-fullscreen {
+  height: 0 !important;
+  padding-top: 56.25% !important; }
+
+  :-moz-full-screen {
+  z-index: 99 !important;
+}
+
+:-webkit-full-screen {
+  z-index: 99 !important;
+}
+
+:fullscreen {
+  z-index: 99 !important;
+}
+
+.js-pause-animation {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+.charlie {
+  opacity: 0; }
+
+.charlie.animated {
+  opacity: 1;
+  visibility: visible !important }

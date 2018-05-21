@@ -1,0 +1,48 @@
+.video-js .vjs-replay-button {
+    font-size: 3em;
+    line-height: 1.5em;
+    height: 1.5em;
+    width: 3em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+    border: .06666em solid #fff;
+    background-color: #2B333F;
+    background-color: rgba(43,51,63,.7);
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    z-index: 2147483647;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    &.video-paused {
+      // display: inline-block !important;
+      left: calc(50% + 1.6em);
+    }
+}
+.video-js:hover .vjs-replay-button {
+    outline: 0;
+    border-color: #fff;
+    background-color: rgba(115,133,159,.5);
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+}
+
+.vjs-big-play-button{
+  &.video-paused {
+    display: inline-block !important;
+    left: calc(50% - 1.6em);
+  }
+}

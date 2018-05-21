@@ -1,0 +1,103 @@
+@-webkit-keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%, to {
+    opacity: 1; } }
+
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%, to {
+    opacity: 1; } }
+
+.animate-start {
+  -webkit-animation: animate-start 6s;
+          animation: animate-start 6s; }
+
+@-webkit-keyframes animate-start2 {
+  from {
+    opacity: 0; }
+  1%, to {
+    opacity: 1; } }
+
+@keyframes animate-start2 {
+  from {
+    opacity: 0; }
+  1%, to {
+    opacity: 1; } }
+
+.animate-start2 {
+  -webkit-animation: animate-start2 30s;
+          animation: animate-start2 30s; }
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  5%, to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  5%, to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+.zoomIn {
+  -webkit-animation: zoomIn 12s;
+          animation: zoomIn 12s; }
+
+@-webkit-keyframes animate4__button {
+  from {
+    opacity: 0; }
+  3%, to {
+    opacity: 1; } }
+
+@keyframes animate4__button {
+  from {
+    opacity: 0; }
+  3%, to {
+    opacity: 1; } }
+
+.animate4__button {
+  -webkit-animation: animate4__button 16s;
+          animation: animate4__button 16s; }
+
+@-webkit-keyframes textAnimateLetter {
+  from {
+    opacity: 0; }
+  25%, to {
+    opacity: 1; } }
+
+@keyframes textAnimateLetter {
+  from {
+    opacity: 0; }
+  25%, to {
+    opacity: 1; } }
+
+.textAnimateLetter {
+  -webkit-animation: textAnimateLetter 10s;
+          animation: textAnimateLetter 10s; }
+
+@-webkit-keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate-finish {
+  -webkit-animation: animate-finish .2s;
+          animation: animate-finish .2s; }

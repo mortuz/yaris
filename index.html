@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video</title>
+	<!-- <link rel="stylesheet" href="app/css/reset.css"> -->
+	<link rel="stylesheet" href="app/css/bootstrap.min.css">
+	<link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="app/css/animate.css">
+	<link rel="stylesheet" href="app/css/my__animation.css">
+	<link rel="stylesheet" href="app/css/main.css"> -->
+	<link rel="stylesheet" href="app/css/compiled.min.css">
+		<style type="text/css">
+			@font-face {
+				font-family: century;
+				src: url(CenturyGothicRegular.ttf);
+			}
+		
+			.txt {
+				margin-top: 1%;
+				text-align: -webkit-center;
+			}
+		
+			@media only screen and (max-width: 1024px) {
+				.b-video-player-wrapper {
+					top: 10px;
+				}
+			}
+		
+			#bg {
+				background: radial-gradient(#0000008c, #0000008c, #0000008c, #0000008c), url(app/img/Layer.JPG);
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+		
+			}
+		
+		
+			div#videoPlayerWrapper {
+				border: solid 1px #f00;
+				box-shadow: 0px 0px 20px 10px rgba(194, 33, 33, 0.75);
+				-moz-box-shadow: 0px 0px 20px 10px rgba(194, 33, 33, 0.75);
+				-webkit-box-shadow: 0px 0px 20px 10px rgba(194, 33, 33, 0.75);
+			}
+		
+			.availbtn {
+				
+			}
+		
+			.applybtn {
+				text-align: center;
+				height: auto;
+				margin: auto;
+				text-align: center;
+				position: relative;
+		
+				vertical-align: middle;
+				text-align: center;
+			}
+		
+			.applybtn>* {
+				vertical-align: middle;
+			}
+		
+			.text_over_image {
+				position: absolute;
+				margin: auto;
+				top: 17%;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				color: #d4d5d7;
+				font-size: 14px;
+				padding: 0px;
+			}
+		
+		
+		
+			.applybtn img {
+				width: 54%;
+				height: 40px;
+			}
+		
+			@media only screen and (min-width: 1024px) {
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.txt {
+					letter-spacing: 2px;
+				}
+			}
+		
+		
+			@media only screen and (max-width: 420px) {
+				.applybtn img {		
+					width: 50%;
+					height: 50px;
+				}
+		
+				.text_over_image {
+					top: 12%;
+					font-size: 1.4em;
+				}
+			}
+		
+		
+			.col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.txt {
+				font-size: 27px;
+			}
+		
+			@media only screen and (max-width: 420px) {
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.txt {
+					font-size: 1.4em;
+				}
+		
+			}
+		
+			.vertical-divider {
+				position: absolute;
+				z-index: 10;
+				left: 50%;
+				margin: 0;
+				padding: 0;
+				width: auto;
+				height: 20%;
+				line-height: 0;
+				text-align: center;
+				text-transform: uppercase;
+				transform: translateX(-50%);
+				background: #f00;
+				border: solid 1px #f00;
+				box-shadow: 0px 0px 5px 2px rgba(194, 33, 33, 0.75);
+				-moz-box-shadow: 0px 0px 5px 2px rgba(194, 33, 33, 0.75);
+				-webkit-box-shadow: 0px 0px 5px 2px rgba(194, 33, 33, 0.75);
+				width: 1px;
+				height: 70%;
+			}
+			img {
+				max-height: 35px;
+			}
+			.bottom-logo {
+				margin-top: 1%;
+			}
+		
+			@media only screen and (max-width: 420px) {
+				.bottom-logo {
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+			}
+		
+		
+		@media (min-width: 1400px) {
+			img {
+				max-height: 45px;
+			}
+			.applybtn img {
+				width: 54%;
+				height: 45px;
+				margin-top: 3%;
+			}
+			.text_over_image {
+				font-size: 16px;
+				margin-top: 3%;
+			}
+			.bottom-logo {
+				margin-top: 3%;
+			}
+		}
+			@media only screen and (max-width: 1024px) and (min-width: 768px) {
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.text-center.txt {
+					font-size: 40px;
+					top: 40px;
+					margin-bottom: 40px;
+				}
+		
+				.applybtn img {
+					width: auto;
+					height: 82px;
+				}
+		
+			}
+		</style>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		</head>
+		
+		<body id="bg">
+			<!-- facebook link share JS sdk -->
+			<div id="fb-root"></div>
+			<script>
+				(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12&appId=160525834774050&autoLogAppEvents=1';
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+			<!-- <a href="javascript:void(0);" onclick="fbLogin()" id="fbLink" hidden>
+					<img src="app/img/fblogin.png" />
+					</a>
+					<div id="status"></div> 
+					
+					<img src="app/img/Croma_Logo.png" alt="HDFC Poster" height=auto style="max-width: 100%; width:854px">
+				</div> -->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+							<div id="videoPlayerWrapper" class="b-video-player-wrapper" style="margin-top:2%;">
+								<div id="textAnimationBlock" class="b-text-animation">
+								</div>
+							</div>
+						</div>
+						</div>
+						<!--  <script src="https://code.jquery.com/jquery-2.x-git.min.js"></script>-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center txt">
+							<p style=" color: #d4d5d7;" class="avail-p">Avail Your Pre-approved Loan</p>
+						</div>
+						
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 availbtn" style="margin-top:0%;
+										text-align:center;">
+							<div class="col-md-4"></div>
+							<div id="over" class="col-md-4">
+								<div class="applybtn">
+									<a href="https://www.hdfcbank.com/personal/products/loans/car-loans/new-car-loans">
+										<img src="app/img/button-image.png" />
+										<div class="text_over_image">Avail Now</div>
+									</a>									
+								</div>
+							</div>
+							<div class="col-md-4"></div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bottom-logo">
+							<div class="col-lg-3 col-md-3"></div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<img src="app/img/hdfc.png" class="img-responsive" style="float:right;">
+							</div>
+							<div class="vertical-divider"></div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<img src="app/img/toyota.png" class="img-responsive" style="float:left;">
+							</div>
+							<div class="col-lg-3 col-md-3"></div>
+						</div>
+
+					
+				</div>
+			
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+<script src="app/js/compiled.js"></script>
+<!-- <script src="app/js/charlie.js"></script>
+<script src="app/js/index.js"></script> -->
+<noscript>
+	<style type="text/css">
+		#videoPlayerWrapper {
+			display: none;
+		}
+	</style>
+	<div class="noscriptmsg">You don't have javascript enabled</div>
+</noscript>
+
+</body>
+
+</html>
